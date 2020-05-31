@@ -70,11 +70,10 @@ const ThemeToggler=styled.div`
 `
 
 function HomeView(props){
-  const {toggleTheme, theme}=props
-  console.log(theme)
+  const {toggleTheme}=props
   return (
     <NavbarWrapper>
-        <Logo/>
+        <a href={"/"}><Logo/></a>
         <NavListAndNightModeWrapper>
             <NavList>
                 <li>Proyectos</li>

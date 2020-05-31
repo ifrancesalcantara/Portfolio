@@ -1,5 +1,5 @@
 import React from "react";
-import {HomeViewComponent, Text, Name, Position, AboutMe, LinksWrapper, Links, Logo} from "./styles"
+import {WelcomeCard, Text, Name, Position, AboutMe, LinksWrapper, Links, Logo, Portrait} from "./styles"
 //import Login from "../components/Login/Login";
 
 const gitHubLink="https://github.com/ifrancesalcantara"
@@ -11,12 +11,13 @@ const twitterLink="https://twitter.com/ifrancesalcanta"
 
 function HomeView(){
   return (
-    <HomeViewComponent>
+    <WelcomeCard>
         <Text>
             <Name>Iván Francés</Name>
             <Position>Full Stack Developer</Position>
             <AboutMe>Más información</AboutMe>
         </Text>
+        <Portrait/>
         <LinksWrapper>
             <Links>
                 <a href={linkedInLink}><Logo first linkedIn></Logo></a>
@@ -26,7 +27,7 @@ function HomeView(){
                 <a href={twitterLink}><Logo last twitter></Logo></a>
             </Links>
         </LinksWrapper>
-    </HomeViewComponent>
+    </WelcomeCard>
   );
 }
 
