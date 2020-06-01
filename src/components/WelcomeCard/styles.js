@@ -63,7 +63,8 @@ const LinksWrapper=styled.div`
 const Links=styled.ul`
     background:${({theme})=>theme.primary_transparent};
     list-style:none;
-    padding:.8vw
+    padding:.8vw;
+    border-radius:.5vw 0 0 .5vw;
 `
 
 const Logo=styled.li`
@@ -83,11 +84,11 @@ const Portrait=styled.div`
     background-repeat: no-repeat;
     width:25vw;
     height:25vw;
-    {/*double navbar height + (margin-left + img + list padding) + + aproximated == calc(5vw + 3vw + 1.6vw)*/};
     margin:12vw 9.6vw 0 10vw;
     border-radius:50%;
     overflow:hidden;
 `
+    ///*double navbar height + (margin-left + img + list padding) + + aproximated == calc(5vw + 3vw + 1.6vw)*/
 
 function getIcon(props){
     const {linkedIn, gitHub, codewars, codePen, twitter, theme}=props
