@@ -3,11 +3,16 @@ import styled from "styled-components"
 
 const arrowImage="./Images/HomeProjects/arrow.png"
 
+//const border="solid lightgray .1vw"
+//const darkerBorder="solid gray .1vw"
+
 const ArrowWrapper=styled.div`
     width:10vw;
     display:flex;
     justify-content:center;
-    align-items:center
+    align-items:center;
+    background:${({theme, name})=>name==="portfolio"?theme.primary_transparent2:theme.projects[name].color};
+    transition:1.1s;
 `
 
 const Image=styled.div`
@@ -20,11 +25,10 @@ const Image=styled.div`
 `
 
 function Arrow(props){
-    const {dir, setWatching, watching}=props
-    console.log(watching, dir)
+    const {dir, setIndex, index, name}=props
   return (
-    <ArrowWrapper>
-        {watching===0&&dir==="previous"?<div/>:watching===3&&dir==="next"?<div/>:<Image dir={dir} onClick={()=>{setWatching()}}/>}
+    <ArrowWrapper name={name} onClick={()=>{setIndex()}}>
+        {index===0&&dir==="previous"?<div/>:index===3&&dir==="next"?<div/>:<Image dir={dir}/>}
     </ArrowWrapper>
   );
 }

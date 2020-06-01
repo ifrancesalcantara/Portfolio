@@ -1,28 +1,31 @@
 import React, {useState} from "react";
-import {CarouselWrapper, ProjectWrapper, Project} from "./styles"
+import {CarouselWrapper, ProjectWrapper} from "./styles"
 import {Arrow} from "./Arrow/Arrow"
+import {Project} from "./Project/Project"
 
-function Carousel(){
-  const [watching, setWatching] = useState(0)
+function Carousel(props){
+  const {unfold}=props
+  const [index, setIndex] = useState(0)
+  const [names/*, sortNames*/] = useState(["portfolio","paintapop","hoodie","bombard"])
   return (
-    <CarouselWrapper>
-        <Arrow dir={"previous"} setWatching={()=>setWatching(getWatching(watching, "prev"))} watching={watching}/>
+    <CarouselWrapper unfold={unfold}>
+        <Arrow dir={"previous"} setIndex={()=>setIndex(getIndex(index, "prev"))} index={index} name={names[index]}/>
         <ProjectWrapper>
-            <Project watching={watching}>Project1</Project>
-            <Project watching={watching}>Project2</Project>
-            <Project watching={watching}>Project3</Project>
-            <Project watching={watching}>Project4</Project>
+            <Project index={index} name={names[0]}/>
+            <Project index={index} name={names[1]}/>
+            <Project index={index} name={names[2]}/>
+            <Project index={index} name={names[3]}/>
         </ProjectWrapper>
-        <Arrow dir={"next"} setWatching={()=>setWatching(getWatching(watching, "next"))} watching={watching}/>
+        <Arrow dir={"next"} setIndex={()=>setIndex(getIndex(index, "next"))} index={index} name={names[index]}/>
     </CarouselWrapper>
   );
 }
 
-function getWatching(watching, dir){
+function getIndex(index, dir){
     if(dir==="next"){
-        if(watching+1>3){return 3}return watching+1
+        if(index+1>3){return 3}return index+1
     } else {
-        if(watching-1<0){return 0}return watching-1
+        if(index-1<0){return 0}return index-1
     }
 }
 
