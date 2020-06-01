@@ -1,10 +1,15 @@
 import React from "react";
-import {Wrapper, Title, Carousel} from "./styles"
+import {Title} from "./Title/Title.js"
+import {Carousel} from "./Carousel/Carousel.js"
+import styled from "styled-components"
+
+const Wrapper=styled.div`
+`
 
 function HomeViewProjects(){
   return (
     <Wrapper>
-        <Title>My Projects</Title>
+        <Title/>
         <Carousel/>
     </Wrapper>
   );

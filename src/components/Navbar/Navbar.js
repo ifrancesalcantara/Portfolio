@@ -11,8 +11,8 @@ function HomeView(props){
         <a href={"/"}><Logo/></a>
         <NavListAndNightModeWrapper>
             <NavList>
-                <li>Proyectos</li>
-                <li>Contacto</li>
+                <li>Projects</li>
+                <li>Contact</li>
             </NavList>
             <ThemeToggler onClick={()=>toggleTheme()} angle={props.togglerAngle}></ThemeToggler>
         </NavListAndNightModeWrapper>

@@ -28,7 +28,7 @@ const WelcomeCard=styled.div`
 const Text=styled.div`
     padding-top:30vh;
     margin-left:7vw;
-    font-family: 'Expletus Sans';
+    font-family: ${({theme})=>theme.fonts.first};
     font-weight: bold;
 `
 

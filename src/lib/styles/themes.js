@@ -1,4 +1,12 @@
+const commonStyles = {
+    fonts:{
+        first: 'Expletus Sans'
+    }
+}
+
+
 export const lightTheme = {
+    ...commonStyles,
     name:"light",
     primary:"white",
     primary_transparent:"rgba(255,255,255,.5)",
@@ -11,6 +19,7 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
+    ...commonStyles,
     name:"dark",
     primary:"rgb(0,0,139)",
     primary_transparent:"rgba(0,0,25,.7)",

@@ -15,7 +15,7 @@ function HomeView(){
         <Text>
             <Name>Iván Francés</Name>
             <Position>Full Stack Developer</Position>
-            <AboutMe>Más información</AboutMe>
+            <AboutMe>About Me</AboutMe>
         </Text>
         <Portrait/>
         <LinksWrapper>

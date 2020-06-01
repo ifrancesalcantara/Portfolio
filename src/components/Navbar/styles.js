@@ -12,7 +12,7 @@ const NavbarWrapper=styled.div`
     align-items: center;
     justify-content:space-between;
     position: absolute;
-    width: 100vw;
+    width: -webkit-fill-available;
     z-index:9999
 `
 
@@ -27,7 +27,7 @@ const Logo=styled.div`
 
 const NavListAndNightModeWrapper=styled.div`
     display:flex;
-        height:${size+1+"vw"};
+    height:${size+1+"vw"};
     align-items:center;
 `
 
