@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const logoSize="3vw"
-const gitHubDay="./Images/Logo/Contact/gitHub/gitHubDay.png"
+const gitHubDay="public/Images/Logo/Contact/gitHub/gitHubDay.png"
 const gitHubNight="./Images/Logo/Contact/gitHub/gitHubNight.png"
 const linkedInDay="./Images/Logo/Contact/linkedIn/linkedInDay.png"
 const linkedInNight="./Images/Logo/Contact/linkedIn/linkedInNight.png"
