@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const logoSize="3vw"
-const gitHubDay="public/Images/Logo/Contact/gitHub/gitHubDay.png"
+const gitHubDay="./Images/Logo/Contact/gitHub/gitHubDay.png"
 const gitHubNight="./Images/Logo/Contact/gitHub/gitHubNight.png"
 const linkedInDay="./Images/Logo/Contact/linkedIn/linkedInDay.png"
 const linkedInNight="./Images/Logo/Contact/linkedIn/linkedInNight.png"
@@ -12,8 +12,8 @@ const codePenNight="./Images/Logo/Contact/codePen/codePenNight.png"
 const twitterDay="./Images/Logo/Contact/twitter/twitterDay.png"
 const twitterNight="./Images/Logo/Contact/twitter/twitterNight.png"
 
-const welcomeCardImage="./Images/welcomeCard/background.jpg"
-const portraitImage="./Images/welcomeCard/portrait.png"
+const welcomeCardImage="./Images/WelcomeCard/background.jpg"
+const portraitImage="./Images/WelcomeCard/portrait.png"
 
 const WelcomeCard=styled.div`
     display:flex;
