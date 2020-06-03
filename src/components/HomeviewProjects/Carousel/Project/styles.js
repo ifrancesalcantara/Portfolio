@@ -26,7 +26,7 @@ export const projectStyles={
             `
     }
 }
-
+//
 const ProjectWrapper=styled.div`
     min-width:100%;
     height:100vh;
