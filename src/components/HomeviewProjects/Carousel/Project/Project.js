@@ -7,7 +7,7 @@ function Project(props){
   return (
     <ProjectWrapper index={index} name={name}>
         <div>
-          <Title name={name}>{formatTitle(name)}{name==="portfolio"?<span>{"{"}<br/>{"this.website ="}<br/>{"}"}</span>:null}</Title>
+          <Title name={name}>{formatTitle(name)}</Title>
           <Technologies>
             {getTechnologies(projectInfo[name].techs)}
           </Technologies>

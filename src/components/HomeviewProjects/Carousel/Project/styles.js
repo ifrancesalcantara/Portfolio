@@ -39,7 +39,7 @@ const ImageWrapper=styled.div`
 const Technologies=styled.div`
     display:flex;
     justify-content:space-around;
-    margin:2vh 0 14vh 0
+    margin: 2vw 0 10vw 0;
 `
 
 const Technology=styled.div`
