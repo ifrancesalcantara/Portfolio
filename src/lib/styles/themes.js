@@ -1,5 +1,3 @@
-import {projectStyles} from "../../components/HomeviewProjects/Carousel/Project/styles"
-
 const commonStyles = {
     fonts:{
         first: 'Expletus Sans'
@@ -9,8 +7,7 @@ const commonStyles = {
         hoodie:{color:"#9fa8da"},
         bombard:{color:"lightgray"},
         //PORTFOLIO COLOR IN THEME
-    },
-    projectStyles
+    }
 }
 
 
@@ -35,7 +32,7 @@ export const darkTheme = {
     primary:"rgb(0,0,139)",
     primary_transparent:"rgba(0,0,25,.7)",
     primary_transparent_opposite:"rgba(255,255,255,.5)",
-    primary_transparent2:"rgba(0,0,25,.4)",
+    primary_transparent2:"rgba(0,0,25,.5)",
     secondary:"light-blue",
     button:{
         hover:"rgba(2, 119, 189,.5)",
