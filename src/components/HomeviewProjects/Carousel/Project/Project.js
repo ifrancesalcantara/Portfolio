@@ -11,9 +11,9 @@ function Project(props){
           <Technologies>
             {getTechnologies(projectInfo[name].techs)}
           </Technologies>
-          {/*{name==="portfolio"?null:<Link href={projectLinks[name]}>Go to site</Link>}*/}
+          {/*{name==="portfolio"?null:<Link href={projectInfo[name].link}>Go to site</Link>}*/}
           <Link>More details</Link>
-          <Link href={projectLinks[name]}>Go to site</Link>
+          <Link href={projectInfo[name].link}>Go to site</Link>
         </div>
         <div>
           <ImageWrapper name={name}/>
@@ -25,13 +25,6 @@ function Project(props){
 
 function formatTitle(title){
   const result = title.split("");result[0]=result[0].toUpperCase();return result.join("")
-}
-
-const projectLinks={
-  portfolio:null,
-  hoodie:"https://hoodie-app.herokuapp.com/",
-  bombard:"https://bombard.herokuapp.com/",
-  paintapop:"https://paintapop.herokuapp.com/",
 }
 
 export {Project};
