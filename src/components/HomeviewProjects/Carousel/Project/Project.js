@@ -17,7 +17,7 @@ function Project(props){
         <div>
           <MediaWrapper>{getMediaImgs(projectInfo[name].media)}</MediaWrapper>
           <ImageWrapper>
-            <Image title={"Project view under development"} name={name}/>
+            <Image title={"Project view under development"} src={projectInfo[name].img} name={name}/>
           </ImageWrapper>
           <MainText>{projectInfo[name].mainText}</MainText>
         </div> 

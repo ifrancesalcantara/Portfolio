@@ -57,7 +57,7 @@ export const projectInfo={
     },
     paintapop:{
         techs:["react", "mongo", "css3", "nodejs"],
-        mainText:"A mobile application that allows users to trade painting services. The user can browse and post cards showing thier style, connecting with the card's creator with a chat. \nDeployed version: https://paintapop.herokuapp.com/ \nBackend: https://github.com/ifrancesalcantara/Maquetepinto-backend",
+        mainText:"A mobile application that allows users to trade painting services. The user can browse and post cards showing thier style, connecting with the card's creator with a chat.",
         img:"./Images/Projects/paintapop.png",
         link:"https://paintapop.herokuapp.com/",
         media:["mobile", "tablet"]
@@ -71,7 +71,7 @@ export const projectInfo={
     },
     hoodie:{
         techs:["react", "css3", "sass", "nodejs", "handlebar", "gmaps", "express"],
-        mainText:"A mobile application that allows the users to post comments on a map. These comments can be made public or private, allowing the user to interact with other user comments replying or liking them. \n \nDeployed version: https://hoodie-app.herokuapp.com/",
+        mainText:"A mobile application that allows the users to post comments on a map. These comments can be made public or private, allowing the user to interact with other user comments replying or liking them.",
         img:"./Images/Projects/hoodie.png",
         link:"https://hoodie-app.herokuapp.com/",
         media:["mobile"]

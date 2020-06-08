@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {technologyInfo, projectInfo, mediaImgs} from "./projectData"
+import {technologyInfo, mediaImgs} from "./projectData"
 
 const ProjectWrapper=styled.div`
     min-width:100%;
@@ -27,17 +27,17 @@ const Title=styled.p`
 
 const ImageWrapper=styled.div`
     display:flex;
-    justify-content:flex-end
+    justify-content:center;
 `
 
-const Image=styled.div`
-    background-image: url(${({name})=>projectInfo[name].img});
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 36vw;
-    margin: 4vh 0 0 13vw;
+const Image=styled.img`
+    width: 30vw;
+    margin: 4vh 5vw;
     display: inline-block;
-    height: 21vw;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 1.1vw -.5vw rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 1.1vw -.5vw rgba(0,0,0,1);
+    box-shadow: 0px 0px 1.1vw -.5vw rgba(0,0,0,1);
 `
 
 const Technologies=styled.div`
@@ -45,13 +45,14 @@ const Technologies=styled.div`
     justify-content:space-around;
     flex-wrap:wrap;
     margin: 2vw 0 10vw 0;
+    width:70%;
 `
 
 const Technology=styled.div`
     background-image:url(${({tech})=>technologyInfo[tech].img});
-    margin-right:5vw;
-    height:5vw;
-    width:5vw;
+    margin-right:2vw;
+    height:3vw;
+    width:3vw;
     background-size: contain;
     background-repeat:no-repeat;
 `
@@ -78,13 +79,12 @@ const MainText=styled.p`
     margin-top:4vh;
     line-height:2vw;
     padding:1.3vw;
-    border-radius:1vw;
 `
 
 const MediaWrapper=styled.div`
     display:flex;
     justify-content: flex-end;
-    margin-top:2vh
+    margin-top:4vh
 `
 
 const MediaImg=styled.div`
@@ -92,9 +92,9 @@ const MediaImg=styled.div`
     background-size: contain;
     background-repeat:no-repeat;
     margin-left:${({i})=>i===0?null:"2vw"};
-    opacity:${({availability})=>availability?"100%":"50%"};
-    width:3vw;
-    height:3vw
+    opacity:${({availability})=>availability?"100%":"40%"};
+    width:1.5vw;
+    height:1.5vw
 `
 
 export{ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg}
