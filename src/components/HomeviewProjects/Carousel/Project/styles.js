@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {technologyImgs, projectInfo} from "./projectData"
+import {technologyInfo, projectInfo, mediaImgs} from "./projectData"
 
 const ProjectWrapper=styled.div`
     min-width:100%;
@@ -16,34 +16,40 @@ const ProjectWrapper=styled.div`
 const Title=styled.p`
     font-family:${({theme})=>theme.fonts.first};
     font-size:6vw;
-    margin-top:8vw;
-    text-align:right;
+    margin-top:8vh;
     width:30vw;
-    line-height:3vw;
-    height: 23vh;
+    line-height: 9vh;
+    height: 9vh;
     span{
         font-size:3vw
     }            
 `
 
 const ImageWrapper=styled.div`
+    display:flex;
+    justify-content:flex-end
+`
+
+const Image=styled.div`
     background-image: url(${({name})=>projectInfo[name].img});
     background-size: contain;
-    background-repeat:no-repeat;
-    width: 40vw;
-    margin: 10vh 0 0 5vw;
+    background-repeat: no-repeat;
+    width: 36vw;
+    margin: 4vh 0 0 13vw;
     display: inline-block;
-    height: 39vh;
+    height: 21vw;
 `
 
 const Technologies=styled.div`
     display:flex;
     justify-content:space-around;
+    flex-wrap:wrap;
     margin: 2vw 0 10vw 0;
 `
 
 const Technology=styled.div`
-    background-image:url(${({tech})=>technologyImgs[tech]});
+    background-image:url(${({tech})=>technologyInfo[tech].img});
+    margin-right:5vw;
     height:5vw;
     width:5vw;
     background-size: contain;
@@ -59,7 +65,7 @@ const Link=styled.a`
     width:fit-content;
     margin:6vh 0;
     text-decoration: none;
-    color:black
+    color:black;
 `
 
 const MainText=styled.p`
@@ -68,12 +74,27 @@ const MainText=styled.p`
     font-family:${({theme})=>theme.fonts.first};
     font-size:1.5vw;
     max-width:fit-content;
-    max-height: 34vh;
     white-space: pre-line;
-    text-overflow:ellipsis;
-    margin-top:8vh;
+    margin-top:4vh;
+    line-height:2vw;
     padding:1.3vw;
     border-radius:1vw;
 `
 
-export{ProjectWrapper, Title, ImageWrapper, Link, Technologies, Technology, MainText}
+const MediaWrapper=styled.div`
+    display:flex;
+    justify-content: flex-end;
+    margin-top:2vh
+`
+
+const MediaImg=styled.div`
+    background-image: url(${({media})=>mediaImgs[media]});
+    background-size: contain;
+    background-repeat:no-repeat;
+    margin-left:${({i})=>i===0?null:"2vw"};
+    opacity:${({availability})=>availability?"100%":"50%"};
+    width:3vw;
+    height:3vw
+`
+
+export{ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg}
