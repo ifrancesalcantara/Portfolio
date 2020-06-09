@@ -3,18 +3,17 @@ import {technologyInfo, mediaImgs} from "./projectData"
 
 const ProjectWrapper=styled.div`
     min-width:100%;
-    height:100vh;
     position:relative;
     left:${({index})=>(index*-100)+"%"};
-    transition: .8s ease-out .3s;
-    background:${({theme, name})=>name==="portfolio"?theme.primary_transparent2:theme.projects[name].color};
-    //name==="portfolio"?theme.primary_transparent:theme.projects[name].color}
+    top:${({unfold})=>unfold-100+"vh"};
+    height:${({unfold})=>unfold+"vh"};
+    transition: .8s ease-out .2s;
     color:black;
     display:flex
 `
 
 const Title=styled.p`
-    font-family:${({theme})=>theme.fonts.first};
+    color:${({theme})=>theme.text};
     font-size:6vw;
     margin-top:8vh;
     width:30vw;
@@ -70,9 +69,8 @@ const Link=styled.a`
 `
 
 const MainText=styled.p`
-    background:${({theme})=>theme.primary_transparent};
+    background:${({theme})=>theme.primary_transparent2};
     color:${({theme})=>theme.text};
-    font-family:${({theme})=>theme.fonts.first};
     font-size:1.5vw;
     max-width:fit-content;
     white-space: pre-line;
@@ -84,7 +82,7 @@ const MainText=styled.p`
 const MediaWrapper=styled.div`
     display:flex;
     justify-content: flex-end;
-    margin-top:4vh
+    margin-top:4vh;
 `
 
 const MediaImg=styled.div`

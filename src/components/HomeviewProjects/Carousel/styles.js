@@ -2,11 +2,8 @@ import styled from "styled-components"
 
 const CarouselWrapper=styled.div`
     display:flex;
-    height:${({unfold})=>-unfold}vh;
-    position:relative;
-    //doubt these two
-    //top:${({unfold})=>unfold+"vh"};
-    overflow:hidden;
+    transition:2s;
+    background:${({name, theme})=>theme.projects[name]?theme.projects[name].color:null}
 `
 
 const ProjectWrapper=styled.div`

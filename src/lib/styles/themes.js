@@ -1,6 +1,6 @@
 const commonStyles = {
     fonts:{
-        first: 'Expletus Sans'
+        first: ""
     },
     projects:{
         paintapop:{color:"#fff59d"},
@@ -15,7 +15,7 @@ export const lightTheme = {
     ...commonStyles,
     name:"light",
     primary:"white",
-    primary_transparent:"rgba(255,255,255,.5)",
+    primary_transparent:"rgba(183,197,226,0.5)",
     primary_transparent_opposite:"rgba(0,0,25,.7)",
     primary_transparent2:"rgba(255,255,255,.3)",
     secondary:"gray",

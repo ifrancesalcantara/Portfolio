@@ -7,12 +7,13 @@ const arrowImage="./Images/HomeProjects/arrow.png"
 //const darkerBorder="solid gray .1vw"
 
 const ArrowWrapper=styled.div`
-    width:10vw;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:${({theme, name})=>name==="portfolio"?theme.primary_transparent2:theme.projects[name].color};
-    transition:1.1s;
+    width:10vw;
+    position:relative;
+    top:${({unfold})=>unfold-100+"vh"};
+    transition: .8s ease-out .2s;
 `
 
 const Image=styled.div`
@@ -25,9 +26,9 @@ const Image=styled.div`
 `
 
 function Arrow(props){
-    const {dir, setIndex, index, name}=props
+    const {dir, setIndex, index, name, unfold}=props
   return (
-    <ArrowWrapper name={name} onClick={()=>{setIndex()}}>
+    <ArrowWrapper name={name} onClick={()=>setIndex()} unfold={unfold}>
         {index===0&&dir==="previous"?<div/>:index===3&&dir==="next"?<div/>:<Image dir={dir}/>}
     </ArrowWrapper>
   );

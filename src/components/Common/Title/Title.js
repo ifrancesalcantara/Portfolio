@@ -1,24 +1,16 @@
 import React from "react";
 import styled from "styled-components"
+import {ProtectiveScreen} from "../Common"
 
 const arrowImage="./Images/HomeProjects/arrow2.png"
 
 const TitleWrapper=styled.div`
-    color:black;
+    color:${({theme})=>theme.text};
     font-size:8vw;
-    font-family:${({theme})=>theme.fonts.first};
     height:11vw;
-    background:white;
+    background:${({theme})=>theme.primary_transparent};
     display:flex;
     align-items:center;
-`
-
-const ProtectiveScreen=styled.div`
-    z-index:9998;
-    position:absolute;
-    background:rgba(0,0,0,0);
-    height:11vw;
-    width:100%;
 `
 
 const Image=styled.div`
@@ -33,12 +25,12 @@ const Image=styled.div`
 `
 
 function Title(props){
-  const {unfold, setUnfold}=props  
+  const {unfold, setUnfold, title}=props  
   return (
     <TitleWrapper onClick={()=>setUnfold(fullToggle(unfold))}>
-        <ProtectiveScreen/>
+        <ProtectiveScreen height={"11vh"}/>
         <Image unfold={unfold}/>
-        <p> My Projects</p>
+        <p> {title}</p>
     </TitleWrapper>
   );
 }

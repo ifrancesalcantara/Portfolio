@@ -3,9 +3,9 @@ import {ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, MainText
 import {projectInfo, getTechnologies, getMediaImgs} from "./projectData"
 
 function Project(props){
-    const {name, index}=props
+    const {name, index, unfold}=props
   return (
-    <ProjectWrapper index={index} name={name}>
+    <ProjectWrapper index={index} name={name} unfold={unfold}>
         <div>
           <Title name={name}>{formatTitle(name)}</Title>
           <Technologies>
@@ -16,7 +16,7 @@ function Project(props){
         </div>
         <div>
           <MediaWrapper>{getMediaImgs(projectInfo[name].media)}</MediaWrapper>
-          <ImageWrapper>
+          <ImageWrapper unfold={unfold}>
             <Image title={"Project view under development"} src={projectInfo[name].img} name={name}/>
           </ImageWrapper>
           <MainText>{projectInfo[name].mainText}</MainText>

@@ -28,12 +28,11 @@ const WelcomeCard=styled.div`
 const Text=styled.div`
     padding-top:30vh;
     margin-left:7vw;
-    font-family: ${({theme})=>theme.fonts.first};
     font-weight: bold;
 `
 
 const Name=styled.p`
-    text-shadow: 2px 2px black;
+    text-shadow: .2vw .2vw black;
     font-size: 6.5vw;
 `
 
