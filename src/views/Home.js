@@ -11,7 +11,7 @@ function HomeView(){
     <div>
         <Navbar home/>
         <WelcomeCard/>
-        <HomeviewProjects/>
+        {/*<HomeviewProjects/>*/}
         <AboutMe/>
     </div>
   );

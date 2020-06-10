@@ -3,9 +3,6 @@ import styled from "styled-components"
 
 const arrowImage="./Images/HomeProjects/arrow.png"
 
-//const border="solid lightgray .1vw"
-//const darkerBorder="solid gray .1vw"
-
 const ArrowWrapper=styled.div`
     display:flex;
     justify-content:center;
