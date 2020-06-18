@@ -13,7 +13,7 @@ const ProjectWrapper=styled.div`
 `
 
 const Title=styled.p`
-    color:${({theme})=>theme.text};
+    color:${({theme,name})=>name==="paintapop"?null:name==="bombard"?null:theme.text};
     font-size:6vw;
     margin-top:8vh;
     width:30vw;
@@ -43,27 +43,31 @@ const Technologies=styled.div`
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
-    margin: 2vw 0 10vw 0;
-    width:70%;
+    margin: 2vw 0 5vw 2vw;
+    width:90%;
 `
 
 const Technology=styled.div`
     background-image:url(${({tech})=>technologyInfo[tech].img});
-    margin-right:2vw;
-    height:3vw;
-    width:3vw;
+    margin:.5vw 4vw .5vw 0;
+    height:4vw;
+    width:4vw;
     background-size: contain;
     background-repeat:no-repeat;
+    &:hover{
+        transform:scale(1.5, 1.5);
+        transition:.3s;
+    }
 `
 
 const Link=styled.a`
-    font-size:1.8vw;
+    font-size:1.5vw;
     border-radius:1vw;
-    padding:1vw 2vw;
+    padding:.5vw 1vw;
     background: orange;
     display:block;
     width:fit-content;
-    margin:6vh 0;
+    margin:3vh 0;
     text-decoration: none;
     color:black;
 `
@@ -95,4 +99,9 @@ const MediaImg=styled.div`
     height:1.5vw
 `
 
-export{ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg}
+const Subtitle=styled.h2`
+    margin:2vw 0 0;
+    color:${({theme,name})=>name==="paintapop"?null:name==="bombard"?null:theme.text}
+`
+
+export{ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg, Subtitle}
