@@ -57,7 +57,7 @@ export const projectInfo={
         subtitle:"My presentation card",
         techs:["react", "redux", "styled", "nodejs"],
         mainText:"Portfolio under development, focused on clean code and best practices. Currently the best reference for my web development skills. Contact me for the link.\n \n       React, Redux, Styled-Components",
-        img:"./Images/Projects/portfolio.png",
+        img:"./Images/Projects/port.png",
         media:["pc"],
         gitHub:{
             frontend:"https://github.com/ifrancesalcantara/Portfolio",
