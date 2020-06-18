@@ -57,10 +57,6 @@ export const projectInfo={
         subtitle:"My presentation card",
         techs:["react", "redux", "styled", "nodejs"],
         mainText:"Portfolio under development, focused on clean code and best practices. Currently the best reference for my web development skills. Contact me for the link.\n \n       React, Redux, Styled-Components",
-<<<<<<< HEAD
-        img:"./Images/Projects/port.png",
-        media:["pc"]
-=======
         img:"./Images/Projects/portfolio.png",
         media:["pc"],
         gitHub:{
@@ -68,7 +64,6 @@ export const projectInfo={
             backend:"",
             repository:""
         }
->>>>>>> dev-Ivan
     },
     paintapop:{
         subtitle:"Get some cool looking figures",
