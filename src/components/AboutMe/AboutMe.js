@@ -1,15 +1,29 @@
 import React, {useState} from "react";
-import {Subtitle} from "./styles"
+import {AboutMeWrapper,Section,SectionTitle,SectionText} from "./styles"
+import {aboutMeData} from "./aboutMeData"
 import {Title} from "../Common/Title/Title.js"
 import {UnfoldWrapper} from "../Common/Common"
 
 export function AboutMe(){
   const [unfold, setUnfold]=useState(100)
+
   return (
     <div>
         <Title title={"About Me"} unfold={unfold} setUnfold={setUnfold}/>
         <UnfoldWrapper unfold={unfold}>
-          <Subtitle>Background</Subtitle>
+          <AboutMeWrapper>
+            <Section>
+              <SectionTitle>Background</SectionTitle>
+              <SectionText>{aboutMeData.background.text}</SectionText>
+            </Section>
+            <Section>
+              <SectionTitle>Experience</SectionTitle>
+              <SectionText>{aboutMeData.experience.text}</SectionText>
+            </Section>
+            <Section>
+              
+            </Section>
+          </AboutMeWrapper>
         </UnfoldWrapper>
     </div>
   );

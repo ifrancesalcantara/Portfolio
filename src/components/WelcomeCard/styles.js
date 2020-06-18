@@ -39,13 +39,8 @@ const Name=styled.p`
 const Position=styled.p`
     display: table;
     font-size:2vw;
+    padding:0 9vw;
     background:${({theme})=>theme.primary_transparent}
-`
-
-const AboutMe=styled.p`
-    font-size:2vw;
-    display: table;
-    background:pink;
 `
 
 const LinksWrapper=styled.div`
@@ -106,4 +101,4 @@ function getIcon(props){
     }
 }
 
-export {WelcomeCard, Text, Name, Position, AboutMe, LinksWrapper, Links, Logo, Portrait}
+export {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait}

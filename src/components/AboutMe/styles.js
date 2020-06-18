@@ -1,16 +1,21 @@
 import styled from "styled-components"
 
-const Subtitle=styled.h1`
-    margin:0
-`
-
-
 const AboutMeWrapper=styled.div`
-    background:${({theme})=>theme.primary_transparent2};
-    height:${({unfold})=>unfold+"vh"};
-    transition:1s;
     display:flex;
-    overflow:hidden
+    overflow:hidden;
+    height:100%;
 `
-
-export {Subtitle, AboutMeWrapper}
+const Section=styled.div`
+    height:100%;
+    width:100%;
+`
+const SectionTitle=styled.h1`
+    margin:0;
+    color:${({theme})=>theme.text};
+    padding:3vw 0 3vw 6vw;
+`
+const SectionText=styled.p`
+    text-align:justify;
+    padding:0 0 0 6vw
+`
+export {AboutMeWrapper,Section,SectionTitle,SectionText}

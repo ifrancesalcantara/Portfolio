@@ -1,5 +1,5 @@
 import React from "react";
-import {WelcomeCard, Text, Name, Position, AboutMe, LinksWrapper, Links, Logo, Portrait} from "./styles"
+import {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait} from "./styles"
 //import Login from "../components/Login/Login";
 
 const gitHubLink="https://github.com/ifrancesalcantara"
@@ -15,7 +15,6 @@ function HomeView(){
         <Text>
             <Name>Iván Francés</Name>
             <Position>Full Stack Developer</Position>
-            <AboutMe>About Me</AboutMe>
         </Text>
         <Portrait/>
         <LinksWrapper>
