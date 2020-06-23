@@ -3,7 +3,7 @@ const baseURL=process.env.REACT_APP_API_URL+"/project"
 
 class projectService {
   constructor() {
-    this.projectService = axios.create({
+    this.projectService=axios.create({
       baseURL,
       withCredentials: true,
       seUnifiedTopology: true
@@ -15,6 +15,6 @@ class projectService {
   }
 }
 
-const axiosRequestFunctions = new projectService();
+const axiosRequestFunctions=new projectService();
 
 export default axiosRequestFunctions;
