@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL="https://ifrances-portfolio2.herokuapp.com/project"
+const baseURL="https://ifrances-portfolio.herokuapp.com/project"
 
 class projectService {
   constructor() {
