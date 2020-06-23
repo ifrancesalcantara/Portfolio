@@ -1,5 +1,7 @@
 import styled from "styled-components"
-import {technologyInfo, mediaImgs} from "./projectData"
+
+import {mediaData} from "../../../../lib/staticData/media"
+import {techData} from "../../../../lib/staticData/techs"
 
 const ProjectWrapper=styled.div`
     min-width:100%;
@@ -48,7 +50,7 @@ const Technologies=styled.div`
 `
 
 const Technology=styled.div`
-    background-image:url(${({tech})=>technologyInfo[tech].img});
+    background-image:url(${({tech})=>techData[tech].img});
     margin:.5vw 4vw .5vw 0;
     height:4vw;
     width:4vw;
@@ -90,18 +92,20 @@ const MediaWrapper=styled.div`
 `
 
 const MediaImg=styled.div`
-    background-image: url(${({media})=>mediaImgs[media]});
+    background-image: url(${({media})=>mediaData[media]});
     background-size: contain;
     background-repeat:no-repeat;
-    margin-left:${({i})=>i===0?null:"2vw"};
+    margin-left:${({key})=>key===0?null:"2vw"};
     opacity:${({availability})=>availability?"100%":"40%"};
     width:1.5vw;
-    height:1.5vw
+    height:1.5vw;
 `
 
 const Subtitle=styled.h2`
     margin:2vw 0 0;
-    color:${({theme,name})=>name==="paintapop"?null:name==="bombard"?null:theme.text}
+    color:${({theme,name})=>name==="paintapop"?null:name==="bombard"?null:theme.text};
 `
 
-export{ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg, Subtitle}
+const LoadingGif=null
+
+export{ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg, Subtitle,LoadingGif}

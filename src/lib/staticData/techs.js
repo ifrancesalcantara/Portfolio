@@ -1,0 +1,50 @@
+export const techData={
+    react:{
+        title:"React",
+        img:"./Images/Projects/Technologies/react.png"
+    },
+    mongo:{
+        title:"MongoDB",
+        img:"./Images/Projects/Technologies/mongo.png"
+    },
+    redux:{
+        title:"Redux",
+        img:"./Images/Projects/Technologies/redux.png"
+    },
+    styled:{
+        title:"Styled Components",
+        img:"./Images/Projects/Technologies/styled.png"
+    },
+    css3:{
+        title:"CSS3",
+        img:"./Images/Projects/Technologies/css3.png"
+    },
+    sass:{
+        title:"SASS",
+        img:"./Images/Projects/Technologies/sass.png"
+    },
+    nodejs:{
+        title:"NodeJS",
+        img:"./Images/Projects/Technologies/nodejs.png"
+    },
+    handlebar:{
+        title:"Handlebar",
+        img:"./Images/Projects/Technologies/handlebar.png"
+    },
+    html5:{
+        title:"HTML5",
+        img:"./Images/Projects/Technologies/html5.png"
+    },
+    gmaps:{
+        title:"Google Maps API",
+        img:"./Images/Projects/Technologies/gmaps.png"
+    },
+    express:{
+        title:"Express",
+        img:"./Images/Projects/Technologies/express.png"
+    },
+    javascript:{
+        title:"JavaScript",
+        img:"./Images/Projects/Technologies/javascript.png"
+    }
+}
