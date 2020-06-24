@@ -7,7 +7,12 @@ const commonStyles = {
         hoodie:{color:"#9fa8da"},
         bombard:{color:"lightgray"},
         //PORTFOLIO COLOR IN THEME
-    }
+    },
+    buttons:[
+        {
+            color:"#e60000"
+        }
+    ]
 }
 
 

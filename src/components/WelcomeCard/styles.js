@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {LightenDarkenColor} from "../../lib/functions/styleFunctions"
 
 const logoSize="3vw"
 const gitHubDay="./Images/Logo/Contact/gitHub/gitHubDay.png"
@@ -82,7 +83,27 @@ const Portrait=styled.div`
     border-radius:50%;
     overflow:hidden;
 `
-    ///*double navbar height + (margin-left + img + list padding) + + aproximated == calc(5vw + 3vw + 1.6vw)*/
+
+const CvDownloader=styled.a`
+    background-color: ${({theme})=>theme.buttons[0].color};
+    padding: .4vw .9vw;
+    font-size:1.2vw;
+    border-radius:40px;
+    text-decoration:none;  
+    color:${({theme})=>theme.text};
+    &:hover{
+        background-color: ${({theme})=>LightenDarkenColor(theme.buttons[0].color, -20)}
+    }
+    &:active{        
+        background-color: ${({theme})=>LightenDarkenColor(theme.buttons[0].color, -30)}
+    }
+`
+
+const CvDownloaderWrapper=styled.div`
+    display:flex;
+    justify-content:center;
+    margin-top:1vw;
+`
 
 function getIcon(props){
     const {linkedIn, gitHub, codewars, codePen, twitter, theme}=props
@@ -101,4 +122,4 @@ function getIcon(props){
     }
 }
 
-export {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait}
+export {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,CvDownloaderWrapper,CvDownloader}

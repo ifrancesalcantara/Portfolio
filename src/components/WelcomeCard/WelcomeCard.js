@@ -1,5 +1,5 @@
 import React from "react";
-import {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,cvDownloader} from "./styles"
+import {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,CvDownloaderWrapper,CvDownloader} from "./styles"
 //import Login from "../components/Login/Login";
 import {contactLinks} from "../../lib/staticData/links"
 
@@ -11,7 +11,9 @@ function HomeView(){
         <Text>
             <Name>Iván Francés</Name>
             <Position>Full Stack Developer</Position>
-            <cvDownloader>A</cvDownloader>
+            <CvDownloaderWrapper>
+              <CvDownloader href="./CV Ivan Frances.pdf" download>Download my CV</CvDownloader>
+            </CvDownloaderWrapper>
         </Text>
         <Portrait/>
         <LinksWrapper>
