@@ -1,14 +1,11 @@
 import styled from "styled-components"
 
-import {mediaData} from "../../../../lib/staticData/media"
-import {techData} from "../../../../lib/staticData/techs"
+import {mediaImgs,techImgs} from "../../../../lib/staticData/imgURI"
 
 const ProjectWrapper=styled.div`
     min-width:100%;
     position:relative;
     left:${({index})=>(index*-100)+"%"};
-    top:${({unfold})=>unfold-100+"vh"};
-    height:${({unfold})=>unfold+"vh"};
     transition: .8s ease-out .2s;
     color:black;
     display:flex
@@ -17,10 +14,9 @@ const ProjectWrapper=styled.div`
 const Title=styled.p`
     color:${({theme,name})=>name==="paintapop"?null:name==="bombard"?null:theme.text};
     font-size:6vw;
-    margin-top:8vh;
+    margin-top:3vw;
     width:30vw;
-    line-height: 9vh;
-    height: 9vh;
+    line-height: 5vw;
     span{
         font-size:3vw
     }            
@@ -33,7 +29,7 @@ const ImageWrapper=styled.div`
 
 const Image=styled.img`
     width: 30vw;
-    margin: 4vh 5vw;
+    margin: 3vw 5vw 0 5vw;
     display: inline-block;
     height: auto;
     -webkit-box-shadow: 0px 0px 1.1vw -.5vw rgba(0,0,0,1);
@@ -43,14 +39,14 @@ const Image=styled.img`
 
 const Technologies=styled.div`
     display:flex;
-    justify-content:space-around;
+    justify-content:flex-start;
+    margin: 2vw 0 5vw 1vw;
     flex-wrap:wrap;
-    margin: 2vw 0 5vw 2vw;
     width:90%;
 `
 
 const Technology=styled.div`
-    background-image:url(${({tech})=>techData[tech].img});
+    background-image:url(${({tech})=>techImgs[tech]});
     margin:.5vw 4vw .5vw 0;
     height:4vw;
     width:4vw;
@@ -69,7 +65,7 @@ const Link=styled.a`
     background: orange;
     display:block;
     width:fit-content;
-    margin:3vh 0;
+    margin:2vw 0;
     text-decoration: none;
     color:black;
 `
@@ -80,7 +76,7 @@ const MainText=styled.p`
     font-size:1.5vw;
     max-width:fit-content;
     white-space: pre-line;
-    margin-top:4vh;
+    margin:2vw 0;
     line-height:2vw;
     padding:1.3vw;
 `
@@ -88,11 +84,11 @@ const MainText=styled.p`
 const MediaWrapper=styled.div`
     display:flex;
     justify-content: flex-end;
-    margin-top:4vh;
+    margin-top:2vw;
 `
 
 const MediaImg=styled.div`
-    background-image: url(${({media})=>mediaData[media]});
+    background-image: url(${({media})=>mediaImgs[media]});
     background-size: contain;
     background-repeat:no-repeat;
     margin-left:${({key})=>key===0?null:"2vw"};
@@ -104,6 +100,7 @@ const MediaImg=styled.div`
 const Subtitle=styled.h2`
     margin:2vw 0 0;
     color:${({theme,name})=>name==="paintapop"?null:name==="bombard"?null:theme.text};
+    font-size:2vw;
 `
 
 const LoadingGif=null

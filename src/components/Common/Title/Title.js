@@ -1,27 +1,36 @@
 import React from "react";
 import styled from "styled-components"
-import {ProtectiveScreen} from "../Common"
 
 const arrowImage="./Images/HomeProjects/arrow2.png"
 
 const TitleWrapper=styled.div`
     color:${({theme})=>theme.text};
-    font-size:8vw;
-    height:11vw;
+    font-size:4vw;
+    height:6vw;
     background:${({theme})=>theme.primary_transparent};
     display:flex;
     align-items:center;
+    z-index:9998;
+    border-bottom:.1vw solid gray;
 `
 
 const Image=styled.div`
-    width:6vw;
-    height:6vw;
+    width:3vw;
+    height:3vw;
     background-image:url(${arrowImage});
     background-size: contain;
     background-repeat: no-repeat;
     transform:rotate(${({unfold})=>unfold?"180deg":"90deg"});
     transition:.05s ease-in;
-    margin-left:2vw;
+    margin:0 1vw;
+`
+
+const ProtectiveScreen=styled.div`
+    z-index:9999;
+    position:absolute;
+    background:rgba(0,0,0,0);
+    height:6vw;
+    width:100%;
 `
 
 function Title(props){

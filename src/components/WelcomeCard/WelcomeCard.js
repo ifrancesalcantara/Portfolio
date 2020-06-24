@@ -1,13 +1,9 @@
 import React from "react";
-import {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait} from "./styles"
+import {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,cvDownloader} from "./styles"
 //import Login from "../components/Login/Login";
+import {contactLinks} from "../../lib/staticData/links"
 
-const gitHubLink="https://github.com/ifrancesalcantara"
-const linkedInLink="https://www.linkedin.com/in/ifrancesalcantara/"
-const codewarsLink="https://www.codewars.com/users/ifrancesalcantara"
-const codePenLink="https://codepen.io/ifrancesalcantara"
-const twitterLink="https://twitter.com/ifrancesalcanta"
-
+const {gitHubLink,linkedInLink,codewarsLink,codePenLink,twitterLink}=contactLinks
 
 function HomeView(){
   return (
@@ -15,6 +11,7 @@ function HomeView(){
         <Text>
             <Name>Iván Francés</Name>
             <Position>Full Stack Developer</Position>
+            <cvDownloader>A</cvDownloader>
         </Text>
         <Portrait/>
         <LinksWrapper>

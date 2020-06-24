@@ -17,16 +17,14 @@ const portraitImage="./Images/WelcomeCard/portrait.png"
 
 const WelcomeCard=styled.div`
     display:flex;
-    padding-bottom:10vh;
+    padding-top:6vw;
     position:relative;
     background-image:url(${welcomeCardImage});
     background-size: cover;
     background-repeat: no-repeat;
-    align-items:center;
 `
 
 const Text=styled.div`
-    padding-top:30vh;
     margin-left:7vw;
     font-weight: bold;
 `
@@ -34,6 +32,8 @@ const Text=styled.div`
 const Name=styled.p`
     text-shadow: .2vw .2vw black;
     font-size: 6.5vw;
+    color:white;
+    margin-top:4vw;
 `
 
 const Position=styled.p`
@@ -78,7 +78,7 @@ const Portrait=styled.div`
     background-repeat: no-repeat;
     width:25vw;
     height:25vw;
-    margin:12vw 9.6vw 0 10vw;
+    margin: 5vw 9.6vw 7vw 10vw;
     border-radius:50%;
     overflow:hidden;
 `

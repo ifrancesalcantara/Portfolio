@@ -29,7 +29,7 @@ export const lightTheme = {
 export const darkTheme = {
     ...commonStyles,
     name:"dark",
-    primary:"rgb(0,0,139)",
+    primary:"gray",
     primary_transparent:"rgba(0,0,25,.7)",
     primary_transparent_opposite:"rgba(255,255,255,.5)",
     primary_transparent2:"rgba(0,0,25,.5)",

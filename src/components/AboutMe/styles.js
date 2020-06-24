@@ -12,10 +12,12 @@ const Section=styled.div`
 const SectionTitle=styled.h1`
     margin:0;
     color:${({theme})=>theme.text};
-    padding:3vw 0 3vw 6vw;
+    padding:3vw 0 2vw 6vw;    
+    font-size:3vw;
 `
 const SectionText=styled.p`
     text-align:justify;
-    padding:0 0 0 6vw
+    padding:0 0 0 6vw;
+    font-size: 1.3vw;
 `
 export {AboutMeWrapper,Section,SectionTitle,SectionText}

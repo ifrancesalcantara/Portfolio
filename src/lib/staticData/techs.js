@@ -1,50 +1,38 @@
 export const techData={
     react:{
-        title:"React",
-        img:"./Images/Projects/Technologies/react.png"
+        title:"React"
     },
     mongo:{
-        title:"MongoDB",
-        img:"./Images/Projects/Technologies/mongo.png"
+        title:"MongoDB"
     },
     redux:{
-        title:"Redux",
-        img:"./Images/Projects/Technologies/redux.png"
+        title:"Redux"
     },
     styled:{
-        title:"Styled Components",
-        img:"./Images/Projects/Technologies/styled.png"
+        title:"Styled Components"
     },
     css3:{
-        title:"CSS3",
-        img:"./Images/Projects/Technologies/css3.png"
+        title:"CSS3"
     },
     sass:{
-        title:"SASS",
-        img:"./Images/Projects/Technologies/sass.png"
+        title:"SASS"
     },
     nodejs:{
-        title:"NodeJS",
-        img:"./Images/Projects/Technologies/nodejs.png"
+        title:"NodeJS"
     },
     handlebar:{
-        title:"Handlebar",
-        img:"./Images/Projects/Technologies/handlebar.png"
+        title:"Handlebar"
     },
     html5:{
-        title:"HTML5",
-        img:"./Images/Projects/Technologies/html5.png"
+        title:"HTML5"
     },
     gmaps:{
-        title:"Google Maps API",
-        img:"./Images/Projects/Technologies/gmaps.png"
+        title:"Google Maps API"
     },
     express:{
-        title:"Express",
-        img:"./Images/Projects/Technologies/express.png"
+        title:"Express"
     },
     javascript:{
-        title:"JavaScript",
-        img:"./Images/Projects/Technologies/javascript.png"
+        title:"JavaScript"
     }
 }

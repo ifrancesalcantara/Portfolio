@@ -10,7 +10,7 @@ export function AboutMe(){
   return (
     <div>
         <Title title={"About Me"} unfold={unfold} setUnfold={setUnfold}/>
-        <UnfoldWrapper unfold={unfold}>
+        <UnfoldWrapper unfold={unfold} height={44}>
           <AboutMeWrapper>
             <Section>
               <SectionTitle>Background</SectionTitle>

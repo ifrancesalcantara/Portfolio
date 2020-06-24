@@ -24,9 +24,18 @@ const Image=styled.div`
 
 function Arrow(props){
     const {dir, setIndex, index, name, unfold}=props
+    function getIndex(index, dir){
+      if(dir==="next"){
+          if(index+1>3){return 3}return index+1
+      } else {
+          if(index-1<0){return 0}return index-1
+      }
+    }
   return (
-    <ArrowWrapper name={name} onClick={()=>setIndex()} unfold={unfold}>
-        {index===0&&dir==="previous"?<div/>:index===3&&dir==="next"?<div/>:<Image dir={dir}/>}
+    <ArrowWrapper name={name} onClick={()=>setIndex(getIndex(index,dir))} unfold={unfold}>
+        {(index===0&&dir==="previous")||(index===3&&dir==="next")?null:
+          <Image dir={dir}/>
+        }
     </ArrowWrapper>
   );
 }

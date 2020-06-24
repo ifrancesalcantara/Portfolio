@@ -1,8 +1,7 @@
 import styled from "styled-components"
+import {logoImg, themeImgs} from "../../lib/staticData/imgURI"
 
-const logoUrl="./Images/Logo/logo.png" 
-const themeDay="./Images/Logo/themeDay.png" 
-const themeNight="./Images/Logo/themeNight.png" 
+const {themeDay,themeNight}=themeImgs
 const size=5
 const themeImgSize=size/2.2+"vw"
 
@@ -17,7 +16,7 @@ const NavbarWrapper=styled.div`
 `
 
 const Logo=styled.div`
-    background-image:url(${logoUrl});
+    background-image:url(${logoImg});
     background-size: contain;
     background-repeat: no-repeat;
     margin:0.5vw;
@@ -27,7 +26,6 @@ const Logo=styled.div`
 
 const NavListAndNightModeWrapper=styled.div`
     display:flex;
-    height:${size+1+"vw"};
     align-items:center;
 `
 
