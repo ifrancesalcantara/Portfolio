@@ -1,5 +1,6 @@
 import axios from "axios";
-const baseURL="http://localhost:5000/project"/*"https://ifrances-portfolio.herokuapp.com/project"*/
+//const baseURL="http://localhost:5000/project"
+const baseURL="https://ifrances-portfolio.herokuapp.com/project"
 
 class projectService {
   constructor() {
