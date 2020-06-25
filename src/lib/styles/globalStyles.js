@@ -26,4 +26,7 @@ export const GlobalStyles = createGlobalStyle`
     margin-inline-end: 0px;
     padding-inline-start: 0px;
   }
+  h1{
+    margin:0;
+  }
 `

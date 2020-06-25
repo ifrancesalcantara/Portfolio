@@ -13,17 +13,17 @@ function HomeView(props){
         <NavListAndNightModeWrapper>
             <NavList>
                 <li>
-                    <Link to="projectsSection" smooth={true} duration={400}>
+                    <Link to="projectsSection" smooth duration={400}>
                         Projects
                     </Link>
                 </li>
                 <li>
-                    <Link to="aboutMeSection" smooth={true} duration= {400}>
+                    <Link to="aboutMeSection" smooth duration= {400}>
                         About Me
                     </Link>
                 </li>
                 {/*<li>
-                    <Link to="contactSection" smooth={true} duration={400}>
+                    <Link to="contactSection" smooth duration={400}>
                         Contact
                     </Link>
                 </li>*/}

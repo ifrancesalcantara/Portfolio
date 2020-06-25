@@ -1,10 +1,8 @@
 const aboutMeData={
-    background:{
-        text:"I graduated in Translation and Interpretation from the Autonomous University of Barcelona in 2018, where I studied English and Japanese. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-    },
-    experience:{
-        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-    }
+    whoAmI:"I would define myself as a goal-oriented profesional who likes to give his best to reach the objectives under the spiceness of a tight deadline, and solve challenging logic problems in the way. \nI also enjoy reviewing code to assure it has a coherent structure and it looks simple, clear and reads smoothly.",
+    skills:"My main skills are React, Redux, Styled Components and NodeJS. \nI have worked developing asynchronous scripts to interact with REST API and create a testing lab DB for Orange.",
+    values:"What I value the most in a company is the stability it can offer. \nI also value highly learning constantly new thing and the job to be challenging",
+    other:"I value highly having a clear direction and little if any waiting times in working hours. I appreciate a policy of allowing the frontend programmer to know about backend and viceversa. I learnt that I focus better on remote :)"
 }
 
 export {aboutMeData}
