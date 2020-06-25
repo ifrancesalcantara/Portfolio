@@ -1,9 +1,10 @@
 import React from "react";
 
-import Navbar from "../components/Navbar/Navbar"
-import WelcomeCard from "../components/WelcomeCard/WelcomeCard"
-import HomeviewProjects from "../components/HomeviewProjects/HomeviewProjects"
+import {Navbar} from "../components/Navbar/Navbar"
+import {WelcomeCard} from "../components/WelcomeCard/WelcomeCard"
+import {HomeViewProjects} from "../components/HomeviewProjects/HomeviewProjects"
 import {AboutMe} from "../components/AboutMe/AboutMe"
+import {Footer} from "../components/Footer/Footer"
 //import Login from "../components/Login/Login";
 
 function HomeView(){
@@ -11,8 +12,9 @@ function HomeView(){
     <div>
         <Navbar home/>
         <WelcomeCard/>
-        <HomeviewProjects/>
+        <HomeViewProjects/>
         <AboutMe/>
+        <Footer/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import { toggleTheme } from "../../redux/actions/userActions";
+import { Link } from "react-scroll";
 
 import {NavbarWrapper, Logo, NavListAndNightModeWrapper, NavList, ThemeToggler} from "./styles"
 
@@ -11,8 +12,29 @@ function HomeView(props){
         <a href={"/"}><Logo/></a>
         <NavListAndNightModeWrapper>
             <NavList>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li>
+                    <Link to="projectsSection" smooth={true} duration={400}>
+                        Projects
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        className="navLink"
+                        activeClass="projectsSection"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-105}
+                        duration= {400}
+                    >
+                        About Me
+                    </Link>
+                </li>
+                <li>
+                    <Link to="contactSection" smooth={true} duration={400}>
+                        Contact
+                    </Link>
+                </li>
             </NavList>
             <ThemeToggler onClick={()=>toggleTheme()} angle={props.togglerAngle}></ThemeToggler>
         </NavListAndNightModeWrapper>
@@ -31,4 +53,6 @@ function mapDispatchToProps(dispatch){
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeView);
+const connectedNabvar = connect(mapStateToProps, mapDispatchToProps)(HomeView)
+
+export {connectedNabvar as Navbar};

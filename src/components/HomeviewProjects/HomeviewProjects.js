@@ -9,11 +9,11 @@ const HomeSectionWrapper=styled.div`
 function HomeViewProjects(){
   const [unfold, setUnfold]=useState(100)
   return (
-    <HomeSectionWrapper unfold={unfold}>
+    <HomeSectionWrapper unfold={unfold} id="projectsSection">
         <Title title={"My Projects"} unfold={unfold} setUnfold={setUnfold}/>
         <Carousel unfold={unfold}/>
     </HomeSectionWrapper>
   );
 }
 
-export default HomeViewProjects;
+export {HomeViewProjects};

@@ -16,7 +16,7 @@ const twitterNight="./Images/Logo/Contact/twitter/twitterNight.png"
 const welcomeCardImage="./Images/WelcomeCard/background.jpg"
 const portraitImage="./Images/WelcomeCard/portrait.png"
 
-const WelcomeCard=styled.div`
+const WelcomeCardWrapper=styled.div`
     display:flex;
     padding-top:6vw;
     position:relative;
@@ -122,4 +122,4 @@ function getIcon(props){
     }
 }
 
-export {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,CvDownloaderWrapper,CvDownloader}
+export {WelcomeCardWrapper, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,CvDownloaderWrapper,CvDownloader}

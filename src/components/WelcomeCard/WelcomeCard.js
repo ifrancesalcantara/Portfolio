@@ -1,13 +1,13 @@
 import React from "react";
-import {WelcomeCard, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,CvDownloaderWrapper,CvDownloader} from "./styles"
+import {WelcomeCardWrapper, Text, Name, Position, LinksWrapper, Links, Logo, Portrait,CvDownloaderWrapper,CvDownloader} from "./styles"
 //import Login from "../components/Login/Login";
 import {contactLinks} from "../../lib/staticData/links"
 
 const {gitHubLink,linkedInLink,codewarsLink,codePenLink,twitterLink}=contactLinks
 
-function HomeView(){
+function WelcomeCard(){
   return (
-    <WelcomeCard>
+    <WelcomeCardWrapper>
         <Text>
             <Name>Iván Francés</Name>
             <Position>Full Stack Developer</Position>
@@ -25,8 +25,8 @@ function HomeView(){
                 <a href={twitterLink}><Logo last twitter></Logo></a>
             </Links>
         </LinksWrapper>
-    </WelcomeCard>
+    </WelcomeCardWrapper>
   );
 }
 
-export default HomeView;
+export {WelcomeCard};
