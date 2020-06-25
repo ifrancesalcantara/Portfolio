@@ -102,7 +102,7 @@ const CvDownloader=styled.a`
 const CvDownloaderWrapper=styled.div`
     display:flex;
     justify-content:center;
-    margin-top:1vw;
+    margin-top:6vw;
 `
 
 function getIcon(props){

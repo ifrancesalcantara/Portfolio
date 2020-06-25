@@ -34,7 +34,6 @@ const NavList=styled.ul`
     justify-content:space-between;
     align-items:center;
     height:100%;
-    margin-right:8vw;
     li{
         display:inline-block;
         font-weight:bold;
@@ -51,14 +50,13 @@ const NavList=styled.ul`
     }
 `
 
-
 const ThemeToggler=styled.div`
     background-image:url(${({theme})=>theme.name==="dark"?themeDay:themeNight});
     background-size: contain;
     background-repeat: no-repeat;
     width: ${themeImgSize};
     height: ${themeImgSize};
-    margin-right: 5vw;
+    margin: 0 2vw;
     transform: rotate(${({angle})=>angle+"deg"});
     transition-duration:.7s;
     transition-timing-function: ease-out;

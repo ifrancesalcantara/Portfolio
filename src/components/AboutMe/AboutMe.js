@@ -8,8 +8,8 @@ export function AboutMe(){
   const [unfold, setUnfold]=useState(100)
 
   return (
-    <div>
-        <Title title={"About Me"} unfold={unfold} setUnfold={setUnfold} id="aboutMeSection"/>
+    <div id="aboutMeSection">
+        <Title title={"About Me"} unfold={unfold} setUnfold={setUnfold}/>
         <UnfoldWrapper unfold={unfold} height={44}>
           <AboutMeWrapper>
             <Section>

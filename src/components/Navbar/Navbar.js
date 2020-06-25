@@ -18,23 +18,15 @@ function HomeView(props){
                     </Link>
                 </li>
                 <li>
-                    <Link 
-                        className="navLink"
-                        activeClass="projectsSection"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-105}
-                        duration= {400}
-                    >
+                    <Link to="aboutMeSection" smooth={true} duration= {400}>
                         About Me
                     </Link>
                 </li>
-                <li>
+                {/*<li>
                     <Link to="contactSection" smooth={true} duration={400}>
                         Contact
                     </Link>
-                </li>
+                </li>*/}
             </NavList>
             <ThemeToggler onClick={()=>toggleTheme()} angle={props.togglerAngle}></ThemeToggler>
         </NavListAndNightModeWrapper>
