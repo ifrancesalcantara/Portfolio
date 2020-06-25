@@ -53,7 +53,7 @@ const Technology=styled.div`
     background-size: contain;
     background-repeat:no-repeat;
     &:hover{
-        transform:scale(1.5, 1.5);
+        transform:scale(1.2, 1.2);
         transition:.3s;
     }
 `
