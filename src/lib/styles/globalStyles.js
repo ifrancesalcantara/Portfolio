@@ -28,5 +28,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   h1{
     margin:0;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 `

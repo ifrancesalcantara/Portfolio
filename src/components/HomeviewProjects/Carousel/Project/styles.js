@@ -3,12 +3,16 @@ import styled from "styled-components"
 import {mediaImgs,techImgs} from "../../../../lib/staticData/imgURI"
 
 const ProjectWrapper=styled.div`
-    min-width:100%;
     position:relative;
     left:${({index})=>(index*-100)+"%"};
     transition: .8s ease-out .2s;
     color:black;
     display:flex
+`
+
+const ProjectCard=styled.div`
+    display:flex;
+    width:80vw
 `
 
 const Title=styled.p`
@@ -103,6 +107,4 @@ const Subtitle=styled.h2`
     font-size:2vw;
 `
 
-const LoadingGif=null
-
-export{ProjectWrapper, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg, Subtitle,LoadingGif}
+export{ProjectWrapper, ProjectCard, Title, Image, ImageWrapper, Link, Technologies, Technology, MainText, MediaWrapper, MediaImg, Subtitle}

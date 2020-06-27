@@ -3,7 +3,7 @@ import styled from "styled-components"
 const CarouselWrapper=styled.div`
     display:flex;
     transition:2s;
-    background:${({name, theme})=>theme.projects[name]?theme.projects[name].color:null};
+    background:${({projectData, theme})=>projectData&&theme.projects[projectData.name]?theme.projects[projectData.name].color:null};
 `
 
 const ProjectWrapper=styled.div`
