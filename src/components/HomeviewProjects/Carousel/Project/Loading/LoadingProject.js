@@ -2,27 +2,27 @@ import React, {useState, useEffect} from "react";
 import {LoadingProjectWrapper, LoadingText} from "./styles"
 
 function LoadingProject(){
-  const [dots, setDots]=useState({value:"",interval:null})
+  const [dots, setDots]=useState(".")
+
   useEffect(()=>{
     const interval=setInterval(() => {
-      let {value}=dots
-      switch (value) {
+      switch (dots) {
         case ".":
-          setDots({...dots,value:".."})
+          setDots("..")
           break;
         case "..":
-          setDots({...dots,value:"..."})
+          setDots("...")
           break;
         default:
-          setDots({...dots,value:"."});
+          setDots(".");
       }
     }, 1000);
-
-    return ()=>{console.log("clearing Interval");clearInterval(interval)}
+    return ()=>{clearInterval(interval)}
   },[dots])
+
   return (
     <LoadingProjectWrapper>
-        <LoadingText>Loading Project{dots.value}</LoadingText>   
+        <LoadingText>Loading Project{dots}</LoadingText>   
     </LoadingProjectWrapper>
   );
 }
