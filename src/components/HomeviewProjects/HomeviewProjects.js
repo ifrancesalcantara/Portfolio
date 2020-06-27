@@ -10,7 +10,7 @@ function HomeViewProjects(){
   const [unfold, setUnfold]=useState(100)
   return (
     <HomeSectionWrapper unfold={unfold} id="projectsSection">
-        <Title title={"My Projects"} unfold={unfold} setUnfold={setUnfold}/>
+        <Title title="My Projects" unfold={unfold} setUnfold={setUnfold}/>
         <Carousel unfold={unfold}/>
     </HomeSectionWrapper>
   );

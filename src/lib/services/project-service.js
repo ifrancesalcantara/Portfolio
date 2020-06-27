@@ -14,6 +14,10 @@ class projectService {
   getProject(name) {
     return this.projectService.get(`/${name}`).then(({data})=>data).catch(err=>{console.log(err)})
   }
+
+  getProjects() {
+    return this.projectService.get(`/projects`).then(({data})=>data).catch(err=>{console.log(err)})
+  }
 }
 
 const axiosRequestFunctions=new projectService();
