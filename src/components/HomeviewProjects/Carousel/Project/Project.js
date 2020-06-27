@@ -22,7 +22,7 @@ function Project(props){
             {frontend?<Link href={frontend}>Frontend</Link>:null}
             {backend?<Link href={frontend}>Backend</Link>:null}
             {repository?<Link href={frontend}>Repository</Link>:null}
-            {!name==="portfolio"?<Link href={link}>Go to site</Link>:null}
+            {!(name==="portfolio")?<Link href={link}>Deploy</Link>:null}
           </div>
 
           <div>
@@ -40,10 +40,6 @@ function Project(props){
 
 function formatTitle(title){
   const result = title.split("");result[0]=result[0].toUpperCase();return result.join("")
-}
-
-function getProject(){
-  return {}
 }
 
 export {Project};

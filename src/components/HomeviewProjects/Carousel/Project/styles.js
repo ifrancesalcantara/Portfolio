@@ -7,12 +7,12 @@ const ProjectWrapper=styled.div`
     left:${({index})=>(index*-100)+"%"};
     transition: .8s ease-out .2s;
     color:black;
-    display:flex
+    display:flex;
+    min-width:100%;
 `
 
 const ProjectCard=styled.div`
     display:flex;
-    width:80vw
 `
 
 const Title=styled.p`
