@@ -4,6 +4,8 @@ const CarouselWrapper=styled.div`
     display:flex;
     transition:2s;
     background:${({projectData, theme})=>projectData&&theme.projects[projectData.name]?theme.projects[projectData.name].color:null};
+    position:relative;
+    bottom:0%;
 `
 
 const ProjectWrapper=styled.div`

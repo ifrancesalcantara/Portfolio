@@ -4,6 +4,7 @@ import {Carousel} from "./Carousel/Carousel.js"
 import styled from "styled-components"
 
 const HomeSectionWrapper=styled.div`
+  position:relative;
 `
 
 function HomeViewProjects(){
